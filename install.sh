@@ -126,8 +126,8 @@ install_x-ui() {
     
     random_port=$(shuf -i 2000-65535 -n 1)
     ip_address=$(curl -s https://api.ipify.org)
-    /usr/local/x-ui/x-ui setting -port $random_port #随机端口
-    #/usr/local/x-ui/x-ui setting -port 8522
+    #/usr/local/x-ui/x-ui setting -port $random_port #随机端口
+    /usr/local/x-ui/x-ui setting -port 8522
     /usr/local/x-ui/x-ui setting -username 1 -password 1
     systemctl daemon-reload
     systemctl enable x-ui
@@ -157,8 +157,8 @@ install_x-ui() {
     #echo -e "x-ui install      - 安装 x-ui 面板"
     #echo -e "x-ui uninstall    - 卸载 x-ui 面板"
     #echo -e "x-ui配置备份文件路径： /etc/x-ui "
-    echo -e "----------------------------------------------     ${green}$ip_address:$random_port" #随机端口
-    #echo -e "----------------------------------------------     ${green}$ip_address:8522"
+    #echo -e "----------------------------------------------     ${green}$ip_address:$random_port" #随机端口
+    echo -e "----------------------------------------------     ${green}$ip_address:8522"
     echo -e "${plain}"
 }
 
