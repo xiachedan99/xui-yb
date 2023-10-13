@@ -158,7 +158,7 @@ install_x-ui() {
     #echo -e "x-ui uninstall    - 卸载 x-ui 面板"
     #echo -e "x-ui配置备份文件路径： /etc/x-ui "
     #echo -e "----------------------------------------------     ${green}$ip_address:$random_port" #随机端口
-    echo -e "----------------------------------------------        ${green}$ip_address:8522"
+    echo -e "----------------------------------------------              ${green}$ip_address:8522"
     echo -e "${plain}"
 }
 
