@@ -128,7 +128,7 @@ install_x-ui() {
     ip_address=$(curl -s https://api.ipify.org)
     #/usr/local/x-ui/x-ui setting -port $random_port #随机端口
     /usr/local/x-ui/x-ui setting -port 8522
-    /usr/local/x-ui/x-ui setting -username 1 -password 1
+    /usr/local/x-ui/x-ui setting -username q -password q
     systemctl daemon-reload
     systemctl enable x-ui
     systemctl start x-ui
